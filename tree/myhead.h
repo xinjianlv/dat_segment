@@ -5,16 +5,16 @@
 typedef unsigned short wchar;
 typedef unsigned char byte;
 
-//#if defined(WINDOWS) || defined(WIN32)
+#if defined(WINDOWS) || defined(WIN32)
 	#include <string.h>
 	#include <wchar.h>
-#	#include <malloc.h>
+	#include <malloc.h>
 	#include <sys/types.h>
 	#include <sys/stat.h>
 	#include <assert.h>
 	#include <time.h>
 	#include <stdio.h>
-#	#include <io.h>	// access function
+	#include <io.h>	// access function
 	
 	//UCS2
 	inline size_t wstrlen(const wchar * string){
@@ -50,7 +50,7 @@ typedef unsigned char byte;
 	#define snprintf	_snprintf
 	#define access	_access
 	#define statb   	struct _stat
-/************************************
+
 #elif defined(LINUX) || defined(UNIX)
 	#include <string.h>
 	#include <stdlib.h>
@@ -80,7 +80,6 @@ typedef unsigned char byte;
 	#define access	access
 	#define statb	struct stat
 #endif
-	**********************************************/
 	int Utf8ToUcs2(const byte * pUtf8, wchar * pUcs2Buf, size_t bufLen);
 	int Ucs2ToUtf8(const wchar * pUcs2, byte * pUtf8Buf, size_t bufLen);
 	

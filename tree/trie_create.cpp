@@ -98,7 +98,7 @@ int tree_init(const char *fname)
 	//
 	
 
-	struct _stat buf;
+	statb buf;
 	int result = 0;
 	if((result = stat(fname,&buf)) != 0){
 		return -1;	

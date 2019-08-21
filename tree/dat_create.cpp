@@ -161,7 +161,7 @@ static void stopword_init(const char * fstopwords)
 {
 	const char *fname = fstopwords;
 	
-	struct _stat buf;
+	statb buf;
 	int result = 0;
 	if((result = stat(fname,&buf)) != 0){
 		return ;	
@@ -213,7 +213,7 @@ short word_seg(const char *fsource,const char *fsave,const char *fstopwords)
 	const char *fname = fsource;
 	
 
-	struct _stat buf;
+	statb buf;
 	int result = 0;
 	if((result = stat(fname,&buf)) != 0){
 		return -1;	
@@ -326,6 +326,7 @@ short word_seg(const char *fsource,const char *fsave,const char *fstopwords)
     len = Ucs2ToUtf8(p_result, pUtf8, len * 3); free(p_result);
 	FILE *fsv = fopen(fsave,"wb");
 	fwrite(pUtf8,sizeof(byte),len,fsv);
+	return 0;
 }
 
 static void addWordToResult(int shift)

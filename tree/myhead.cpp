@@ -1,8 +1,8 @@
 #include "myhead.h"
 
-//#if defined(WINDOWS) || defined(WIN32)
+#if defined(WINDOWS) || defined(WIN32)
 
-/********************************************
+
 #elif defined(UNIX) || defined(LINUX)
 
 size_t wstrlen(const wchar * string){
@@ -71,7 +71,7 @@ wchar * wstrdup(const wchar * string){
 }
 
 #endif
-***************************************/
+
 int Utf8ToUcs2(const byte * pUtf8Str, wchar * pUcs2Buf, size_t bufLen){
 	assert(pUtf8Str != 0 && *pUtf8Str != 0);
 	assert(pUcs2Buf != 0 && bufLen > 0);

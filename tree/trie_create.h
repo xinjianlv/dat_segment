@@ -2,7 +2,6 @@
 #define TRIE_CREATE_H
 
 #include "myhead.h"
-using namespace std;
 #define CUW_COUNT 0X1FFF
 #define CN_CI_MAX_LEN 0x20
 #define WORDS_END_TAG 0x20

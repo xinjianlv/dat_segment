@@ -1,5 +1,7 @@
 #ifndef DAT_CREATE_H
-#define DAT_CRAETE_H
+#define DAT_CREATE_H
+
+#include "myhead.h"
 
 short dat_create(const char *fword,const char *fDictionary);
 short dat_save();

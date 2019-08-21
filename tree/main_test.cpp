@@ -3,10 +3,11 @@
 #include "dat_create.h"
 #include <iostream>
 using namespace std;
-void main()
+int main(int argc, char ** argv)
 {
-	 char *f1 = "cnToks.txt";
-	 char *f2 = "cnCi.txt";
+    cout<<"run test main function"<<endl;
+	 char *f1 = "../data/cnToks.txt";
+	 char *f2 = "../data/cnCi.txt";
 
 	if(!dat_load()){
 		dat_create(f1,f2);
@@ -14,8 +15,7 @@ void main()
 	
 	}
 	
-	word_seg("kk.txt","kk_save.txt","cnStopToks.txt");
+	word_seg("../data/kk.txt","../data/kk_save.txt","../data/cnStopToks.txt");
 	cout<<"This is the end!"<<endl;
-	system("pause");
-
+    return 0;
 }
