@@ -1,6 +1,6 @@
 #ifndef		JUD_H
 #define		JUD_H
-#include "myhead.h"
+#include "stdio.h"
 
 short isPunctuation(wchar word)
 {   

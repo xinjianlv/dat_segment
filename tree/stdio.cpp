@@ -1,4 +1,4 @@
-#include "myhead.h"
+#include "stdio.h"
 
 #if defined(WINDOWS) || defined(WIN32)
 

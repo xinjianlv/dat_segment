@@ -1,7 +1,7 @@
 #ifndef TRIE_CREATE_H
 #define TRIE_CREATE_H
 
-#include "myhead.h"
+#include "stdio.h"
 #define CUW_COUNT 0X1FFF
 #define CN_CI_MAX_LEN 0x20
 #define WORDS_END_TAG 0x20

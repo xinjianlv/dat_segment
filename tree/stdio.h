@@ -1,5 +1,5 @@
-#ifndef MYHEAD_H
-#define MYHEAD_H
+#ifndef STDIO_H
+#define STDIO_H
 
 // UCS2
 typedef unsigned short wchar;

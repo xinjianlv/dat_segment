@@ -1,4 +1,4 @@
-#include "myhead.h"
+#include "stdio.h"
 #include "trie_create.h"
 #include "dat_create.h"
 #include <iostream>
